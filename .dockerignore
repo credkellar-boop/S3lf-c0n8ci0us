@@ -1,0 +1,7 @@
+target/
+__pycache__/
+*.pyc
+.git
+.github
+.env
+vertex-service-account.json
