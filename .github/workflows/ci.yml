@@ -24,16 +24,17 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install maturin pytest
-          # Assuming this was your truncated line from the video:
           pip install -r conscious_surface/requirements.txt
 
-      - name: Build Rust PyO3 Bridge
-        working-directory: ./cognitive_core
+      - name: Build and Install Rust PyO3 Bridge
         run: |
-          # Build and install directly into the global CI environment
-          maturin develop --release
+          cd cognitive_core
+          # Build a release wheel package and output it to a local 'dist' folder
+          maturin build --release --out dist
+          # Install the compiled wheel globally into the runner's environment
+          pip install dist/*.whl
 
       - name: Run Python Tests
         run: |
-          # Run pytest natively (it will now see cognitive_core)
+          # Pytest will now successfully find the globally installed module
           pytest tests/
