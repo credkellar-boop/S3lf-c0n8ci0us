@@ -1,0 +1,14 @@
+{
+  "name": "systems_analysis",
+  "description": "Deconstructs complex software and physical architectures into isolated feedback loops.",
+  "steps": [
+    {
+      "phase": "Deconstruct",
+      "prompt_injection": "Isolate all nodes, entry points, data flows, and dependencies. Do not guess; map only what is explicitly verified."
+    },
+    {
+      "phase": "Bottleneck Identification",
+      "prompt_injection": "Analyze the connections between nodes. Pinpoint where data queues, latency spikes, or failure conditions occur."
+    }
+  ]
+}
