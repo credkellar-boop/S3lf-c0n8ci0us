@@ -1,43 +1,49 @@
 import streamlit as st
-import json
-import os
+from framework_manager import FrameworkManager
 from thought_matrix import ThoughtMatrix
+from telemetry_bridge import TelemetryBridge
+import dashboard_charts
+import cognitive_core # Validating Rust bridge is active
 
 st.set_page_config(page_title="S3lf-c0n8ci0us Engine", page_icon="🧠", layout="wide")
 st.title("🧠 S3lf-c0n8ci0us Auto-Cognitive Engine")
+st.caption(f"Rust Core Bridge Status: ACTIVE")
 st.write("---")
 
-# Setup framework paths
-LIB_DIR = os.path.join(os.path.dirname(__file__), "../subconscious_lib")
-frameworks = ["systems_analysis.json", "root_cause.json"]
+fm = FrameworkManager()
+framework_files = fm.get_available_frameworks()
 
-# Sidebar Selection
-st.sidebar.header("Cognitive Framework Settings")
-selected_file = st.sidebar.selectbox("Force Brain Frame", frameworks)
+# Sidebar
+st.sidebar.header("Cognitive Settings")
+selected_file = st.sidebar.selectbox("Force Brain Frame", framework_files)
+framework_data = fm.load_framework(selected_file)
 
-# Load framework text data safely
-with open(os.path.join(LIB_DIR, selected_file), "r") as f:
-    framework_data = json.load(f)
-
-st.sidebar.subheader(f"Active Template: {framework_data['name']}")
+st.sidebar.subheader(f"Active: {framework_data['name']}")
 st.sidebar.caption(framework_data['description'])
 
-# User Interaction Zone
+# Main UI
 user_query = st.text_area("Input complex engineering crisis or bottleneck here:")
+
 if st.button("Initialize Reasoning Run"):
     if user_query:
         matrix = ThoughtMatrix()
+        telemetry = TelemetryBridge()
+        
+        # UI placeholders
+        chart_placeholder = st.empty()
+        text_placeholder = st.empty()
+        full_text = ""
+        
         with st.spinner("Aligning neural processing constraints..."):
-            output_stream = matrix.execute_cognitive_loop(user_query, framework_data)
-            
-            if isinstance(output_stream, str):
-                st.info(output_stream)
-            else:
-                placeholder = st.empty()
-                full_text = ""
-                for chunk in output_stream:
-                    if chunk.choices[0].delta.content:
-                        full_text += chunk.choices[0].delta.content
-                        placeholder.markdown(full_text)
+            # The thought matrix now yields tuples: (text_chunk, execution_ms)
+            for chunk_data in matrix.execute_cognitive_loop(user_query, framework_data):
+                text_chunk, exec_ms = chunk_data
+                full_text += text_chunk
+                text_placeholder.markdown(full_text)
+                
+                # Log telemetry and update charts live
+                telemetry.log_latency_delta(text_chunk, exec_ms)
+                with chart_placeholder.container():
+                    dashboard_charts.render_cognitive_metrics(telemetry.metrics_history)
     else:
         st.error("Please provide an engineering input query to begin.")
