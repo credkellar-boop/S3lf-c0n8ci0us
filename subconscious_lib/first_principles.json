@@ -1,0 +1,14 @@
+{
+  "name": "first_principles",
+  "description": "Deconstructs a problem down to its core, undeniable axiomatic truths and builds a solution up from scratch.",
+  "steps": [
+    {
+      "phase": "Axiom Extraction",
+      "prompt_injection": "Identify and list all baseline assumptions. Strip away analogies, industry conventions, and 'best practices' until only raw physics, mathematical limits, or unarguable data remain."
+    },
+    {
+      "phase": "Combinatorial Rebuild",
+      "prompt_injection": "Using only the verified truths established in the previous phase, engineer a novel optimization path without inheriting legacy design flaws."
+    }
+  ]
+}
