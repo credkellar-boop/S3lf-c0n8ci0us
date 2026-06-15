@@ -3,24 +3,32 @@ use pyo3::prelude::*;
 mod framework_router;
 mod self_audit;
 
-// --- Added RustMemoryBuffer so Python can import and initialize it ---
 #[pyclass]
 pub struct RustMemoryBuffer {
     capacity: usize,
+    // Internal storage placeholder for the contexts being added
+    contexts: Vec<String>,
 }
 
 #[pymethods]
 impl RustMemoryBuffer {
     #[new]
     pub fn new(capacity: usize) -> Self {
-        RustMemoryBuffer { capacity }
+        RustMemoryBuffer { 
+            capacity,
+            contexts: Vec::new(),
+        }
+    }
+
+    // This solves the AttributeError by exposing add_context to Python
+    pub fn add_context(&mut self, context: String) {
+        self.contexts.push(context);
     }
 
     pub fn clear(&mut self) {
-        // Add your specific memory clearing logic here in the future
+        self.contexts.clear();
     }
 }
-// ---------------------------------------------------------------------
 
 #[pyfunction]
 fn rust_audit_stream(text: String) -> PyResult<bool> {
@@ -30,9 +38,7 @@ fn rust_audit_stream(text: String) -> PyResult<bool> {
 
 #[pyfunction]
 fn rust_route_input(user_input: String) -> PyResult<String> {
-    // Removed the 'mut' here to clear your compiler warning
     let router = framework_router::Router::new(); 
-    // Simplified routing signature for Python bridge
     match router.route_input(&user_input) {
         Some(f) => Ok(f.name.clone()),
         None => Ok("baseline".to_string()),
@@ -44,9 +50,6 @@ fn rust_route_input(user_input: String) -> PyResult<String> {
 fn cognitive_core(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(rust_audit_stream, m)?)?;
     m.add_function(wrap_pyfunction!(rust_route_input, m)?)?;
-    
-    // --- Register the class with the module so Python can see it ---
     m.add_class::<RustMemoryBuffer>()?;
-    
     Ok(())
 }
