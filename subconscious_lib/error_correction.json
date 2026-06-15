@@ -1,0 +1,8 @@
+{
+  "name": "error_correction",
+  "description": "Recursive feedback loop for self-critique. Re-evaluates outputs for logical consistency.",
+  "steps": [
+    { "phase": "Inconsistency Check", "prompt_injection": "Review previous 3 sentences. Are there internal contradictions?" },
+    { "phase": "Correction", "prompt_injection": "Formulate a corrective statement and resume the reasoning path." }
+  ]
+}
