@@ -1,0 +1,14 @@
+{
+  "name": "root_cause",
+  "description": "Applies a recursive '5 Whys' approach to peel back symptoms and reach the engineering failure point.",
+  "steps": [
+    {
+      "phase": "Symptom Isolation",
+      "prompt_injection": "Separate the visible error state from historical operational behavior. State the immediate anomaly."
+    },
+    {
+      "phase": "Recursive Regression",
+      "prompt_injection": "Trace the execution state backward step-by-step until you hit a human design flaw, code defect, or hardware limitation."
+    }
+  ]
+}
