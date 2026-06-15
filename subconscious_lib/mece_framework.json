@@ -1,0 +1,14 @@
+{
+  "name": "mece_framework",
+  "description": "Mutually Exclusive, Collectively Exhaustive. Breaks problems into distinct, non-overlapping categories that cover the entire problem space.",
+  "steps": [
+    {
+      "phase": "Segmentation",
+      "prompt_injection": "Divide the core problem into 3 to 5 distinct categories. Ensure no two categories overlap (Mutually Exclusive)."
+    },
+    {
+      "phase": "Exhaustion Audit",
+      "prompt_injection": "Review the categories. Identify any edge cases or variables that were left out. If the categories do not encompass 100% of the problem space (Collectively Exhaustive), redefine them."
+    }
+  ]
+}
