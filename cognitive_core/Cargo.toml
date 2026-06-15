@@ -2,14 +2,13 @@
 name = "cognitive_core"
 version = "0.1.0"
 edition = "2021"
+description = "High-velocity Rust core for S3lf-c0n8ci0us"
+
+[lib]
+name = "cognitive_core"
+# "cdylib" is strictly required by Maturin to build a dynamic library that Python can import.
+crate-type = ["cdylib"]
 
 [dependencies]
-# For ultra-fast JSON parsing of Sol-Plex frameworks
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-
-# For zero-latency asynchronous task management
-tokio = { version = "1.0", features = ["full"] }
-
-# For exposing Rust's power to the Python UI layer later
-pyo3 = { version = "0.20.0", features = ["extension-module"], optional = true }
+# The "extension-module" feature tells PyO3 we are building a module to be imported by Python.
+pyo3 = { version = "0.21.0", features = ["extension-module"] }
