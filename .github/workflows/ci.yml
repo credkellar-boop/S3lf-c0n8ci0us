@@ -10,34 +10,30 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-        
-    - name: Install Rust toolchain
-      uses: dtolnay/rust-toolchain@stable
-      
-    - name: Install Maturin and dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install maturin pytest
-        pip install -r conscious_surface/requirements.txt
-        
-    - name: Build Rust PyO3 Bridge
-      working-directory: ./cognitive_core
-      run: |
-        # Create and activate a virtual environment for the build
-        python -m venv .venv
-        source .venv/bin/activate
-        
-        # Build the Rust extension inside the active environment
-        maturin develop --release
-      
-    - name: Run Python Tests
-      run: |
-        # Activate the same virtual environment to run tests
-        source cognitive_core/.venv/bin/activate
-        pytest tests/
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install Maturin and dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install maturin pytest
+          # Assuming this was your truncated line from the video:
+          pip install -r conscious_surface/requirements.txt
+
+      - name: Build Rust PyO3 Bridge
+        working-directory: ./cognitive_core
+        run: |
+          # Build and install directly into the global CI environment
+          maturin develop --release
+
+      - name: Run Python Tests
+        run: |
+          # Run pytest natively (it will now see cognitive_core)
+          pytest tests/
