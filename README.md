@@ -1,9 +1,33 @@
 <div align="center">
   <img src="IMG_0687.png" alt="S3lf-c0n8ci0Us Logo" width="400"/>
 
-  # S3lf-c0n8ci0Us
-  
-  **Advanced AI Cognitive Architecture & Autonomous Framework**
+# S3lf-c0n8ci0us
+
+<p align="center">
+  <a href="https://github.com/credkellar-boop/S3lf-c0n8ci0us/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/credkellar-boop/S3lf-c0n8ci0us/main.yml?style=for-the-badge&logo=github" alt="Build Status">
+  </a>
+  <a href="https://github.com/credkellar-boop/S3lf-c0n8ci0us/releases">
+    <img src="https://img.shields.io/github/v/release/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge&color=blue" alt="Latest Release">
+  </a>
+  <a href="https://github.com/credkellar-boop/S3lf-c0n8ci0us/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge" alt="License">
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/repo-size/credkellar-boop/S3lf-c0n8ci0us?style=flat-square" alt="GitHub repo size">
+  <img src="https://img.shields.io/github/issues/credkellar-boop/S3lf-c0n8ci0us?style=flat-square" alt="GitHub issues">
+  <img src="https://img.shields.io/github/last-commit/credkellar-boop/S3lf-c0n8ci0us?style=flat-square" alt="GitHub last commit">
+</p>
+
+---
+
+## 📖 Project Description
+
+S3lf-c0n8ci0us is an advanced systems monitor merging a Rust agent with a Python layer. Containerized via Docker and deployed on AWS EKS, it plugs into Gemini Cloud (Vertex AI) using Gemini 3.1 Pro's deep reasoning engine to autonomously analyze system telemetry anomalies, trace architectural vulnerabilities, and execute automated responses.
+
+---
 
 ## 🛠️ Core Tech Stack
 
@@ -19,6 +43,12 @@
   </a>
   <a href="https://github.com/features/actions">
     <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions">
+  </a>
+  <a href="https://cloud.google.com/vertex-ai">
+    <img src="https://img.shields.io/badge/Gemini%20Cloud-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini Cloud">
+  </a>
+  <a href="https://deepmind.google/technologies/gemini/#introduction">
+    <img src="https://img.shields.io/badge/Gemini%203.1%20Pro-1A73E8?style=for-the-badge&logo=google&logoColor=white" alt="Gemini 3.1 Pro">
   </a>
 </p>
 
@@ -68,6 +98,25 @@
     <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
   </a>
 </p>
+
+---
+
+## 📂 Project Organization
+
+```text
+├── .github/workflows/    # CI/CD pipelines (Trivy, Cargo Audit, Bandit)
+├── src/                  # Core Systems Agent (Rust)
+│   ├── main.rs
+│   └── ...
+├── analytics/            # Intelligence & Telemetry Layer (Python)
+│   ├── main.py
+│   ├── ai_reasoning.py   # Gemini 3.1 Pro Extended Reasoning Module
+│   └── requirements.txt
+├── deployments/          # Infrastructure orchestration manifests
+│   └── helm/             # Kubernetes Helm Charts
+├── .dockerignore
+├── Dockerfile            # Optimized Multi-Stage Build Configuration
+└── README.md
 
 
 ---
