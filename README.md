@@ -25,7 +25,19 @@
 
 ## 📖 Project Description
 
-S3lf-c0n8ci0us is an advanced systems monitor merging a Rust agent with a Python layer. Containerized via Docker and deployed on AWS EKS, it plugs into Gemini Cloud (Vertex AI) using Gemini 3.1 Pro's deep reasoning engine to autonomously analyze system telemetry anomalies, trace architectural vulnerabilities, and execute automated responses.
+S3lf-c0n8ci0us is an advanced systems monitor merging a high-performance Rust agent with an intelligent Python analytical layer. Containerized via Docker and deployed on AWS EKS, it hooks directly into Gemini Cloud (Vertex AI) using Gemini 3.1 Pro's deep reasoning engine to autonomously analyze system telemetry anomalies, trace underlying architectural vulnerabilities, and execute automated response playbooks.
+
+---
+
+## 🧠 Core Architecture & Cognitive Framework
+
+<p align="left">
+  <a href="ARCHITECTURE.md">
+    <img src="https://img.shields.io/badge/Architecture-Problem--to--Solution%20Loop-7B1FA2?style=for-the-badge&logo=diagram-next&logoColor=white" alt="Architecture Docs">
+  </a>
+</p>
+
+The internal decision engine of this repository executes an automated problem-solving lifecycle. To view the complete engineering diagrams detailing how the system builds baseline telemetry maps, analyzes deep system mutations, validates targets, and dynamically scales responses, read the dedicated [ARCHITECTURE.md](ARCHITECTURE.md) guide.
 
 ---
 
@@ -115,8 +127,10 @@ S3lf-c0n8ci0us is an advanced systems monitor merging a Rust agent with a Python
 ├── deployments/          # Infrastructure orchestration manifests
 │   └── helm/             # Kubernetes Helm Charts
 ├── .dockerignore
+├── ARCHITECTURE.md       # Cognitive problem-solving loop specification
 ├── Dockerfile            # Optimized Multi-Stage Build Configuration
 └── README.md
+
 
 
 ---
