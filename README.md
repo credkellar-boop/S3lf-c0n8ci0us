@@ -4,19 +4,63 @@
   # S3lf-c0n8ci0Us
   **Advanced AI Cognitive Architecture & Autonomous Framework**
 
-  <!-- Badges -->
-  <p>
-    <a href="https://github.com/<credkellar-boop>/S3lf-c0n8ci0Us/actions"><img src="https://img.shields.io/github/actions/workflow/status/<credkellar-boop>/S3lf-c0n8ci0Us/main.yml?style=for-the-badge&logo=github" alt="Build Status"></a>
-    <a href="https://github.com/<credkellar-boop>/S3lf-c0n8ci0Us/releases"><img src="https://img.shields.io/github/v/release/<credkellar-boop>/S3lf-c0n8ci0Us?style=for-the-badge&color=blue" alt="Release"></a>
-    <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"></a>
-    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
-    <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"></a>
-    <a href="https://github.com/<credkellar-boop>/S3lf-c0n8ci0Us/blob/main/LICENSE"><img src="https://img.shields.io/github/license/<credkellar-boop>/S3lf-c0n8ci0Us?style=for-the-badge" alt="License"></a>
-  </p>
-  <p>
-    <em>A multi-layered cognitive system integrating high-performance Rust processing with versatile Python abstractions.</em>
-  </p>
-</div>
+🛠️ Core Tech Stack
+<p align="left">
+<a href="[https://www.rust-lang.org/](https://www.rust-lang.org/)">
+<img src="[https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)" alt="Rust">
+</a>
+<a href="[https://www.python.org/](https://www.python.org/)">
+<img src="[https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)" alt="Python">
+</a>
+<a href="[https://www.docker.com/](https://www.docker.com/)">
+<img src="[https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)" alt="Docker Container">
+</a>
+<a href="[https://github.com/features/actions](https://github.com/features/actions)">
+<img src="[https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)" alt="GitHub Actions">
+</a>
+</p>
+🛡️ Cybersecurity Dev DevOps
+<p align="left">
+<a href="[https://github.com/dependabot](https://github.com/dependabot)">
+<img src="[https://img.shields.io/badge/Dependabot-21272D?style=for-the-badge&logo=dependabot&logoColor=white](https://img.shields.io/badge/Dependabot-21272D?style=for-the-badge&logo=dependabot&logoColor=white)" alt="Dependabot">
+</a>
+<a href="[https://github.com/aquasecurity/trivy](https://github.com/aquasecurity/trivy)">
+<img src="[https://img.shields.io/badge/Trivy_Sec-3F5A9A?style=for-the-badge&logo=aquasecurity&logoColor=white](https://img.shields.io/badge/Trivy_Sec-3F5A9A?style=for-the-badge&logo=aquasecurity&logoColor=white)" alt="Trivy Scanning">
+</a>
+<a href="[https://github.com/rustsec/rustsec](https://github.com/rustsec/rustsec)">
+<img src="[https://img.shields.io/badge/Cargo_Audit-000000?style=for-the-badge&logo=rust&logoColor=red](https://img.shields.io/badge/Cargo_Audit-000000?style=for-the-badge&logo=rust&logoColor=red)" alt="Cargo Audit">
+</a>
+<a href="[https://github.com/PyCQA/bandit](https://github.com/PyCQA/bandit)">
+<img src="[https://img.shields.io/badge/Bandit_SAST-3776AB?style=for-the-badge&logo=python&logoColor=yellow](https://img.shields.io/badge/Bandit_SAST-3776AB?style=for-the-badge&logo=python&logoColor=yellow)" alt="Bandit SAST">
+</a>
+<a href="[https://github.com/features/security](https://github.com/features/security)">
+<img src="[https://img.shields.io/badge/Secrets_Mgmt-2EA44F?style=for-the-badge&logo=github&logoColor=white](https://img.shields.io/badge/Secrets_Mgmt-2EA44F?style=for-the-badge&logo=github&logoColor=white)" alt="GitHub Secrets">
+</a>
+</p>
+🏗️ Infrastructure & Cloud
+<p align="left">
+<a href="[https://aws.amazon.com/](https://aws.amazon.com/)">
+<img src="[https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)" alt="AWS Cloud">
+</a>
+<a href="[https://aws.amazon.com/eks/](https://aws.amazon.com/eks/)">
+<img src="[https://img.shields.io/badge/Amazon_EKS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white](https://img.shields.io/badge/Amazon_EKS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)" alt="Amazon EKS">
+</a>
+<a href="[https://kubernetes.io/](https://kubernetes.io/)">
+<img src="[https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)" alt="Kubernetes">
+</a>
+<a href="[https://helm.sh/](https://helm.sh/)">
+<img src="[https://img.shields.io/badge/Helm-0F1626?style=for-the-badge&logo=helm&logoColor=white](https://img.shields.io/badge/Helm-0F1626?style=for-the-badge&logo=helm&logoColor=white)" alt="Helm Charts">
+</a>
+<a href="[https://prometheus.io/](https://prometheus.io/)">
+<img src="[https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)" alt="Prometheus">
+</a>
+<a href="[https://grafana.com/](https://grafana.com/)">
+<img src="[https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)" alt="Grafana">
+</a>
+<a href="[https://www.postgresql.org/](https://www.postgresql.org/)">
+<img src="[https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)" alt="PostgreSQL">
+</a>
+</p>
 
 ---
 
