@@ -1,30 +1,88 @@
-# S3lf-c0n8ci0us
+<div align="center">
+  <img src="watermarked_img_14241948258419933286.png" alt="S3lf-c0n8ci0Us Logo" width="400"/>
 
-[![Build Status](https://github.com/credkellar-boop/S3lf-c0n8ci0us/actions/workflows/ci.yml/badge.svg)](https://github.com/credkellar-boop/S3lf-c0n8ci0us/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  # S3lf-c0n8ci0Us
+  **Advanced AI Cognitive Architecture & Autonomous Framework**
 
-## Overview
-**S3lf-c0n8ci0us** is a high-velocity, auto-cognitive AI reasoning engine. It fuses a Rust-based parallel execution core with advanced analytical frameworks to enable real-time, zero-latency problem solving. By leveraging memory-safe, low-latency infrastructure, it bridges the gap between traditional automated logic and high-dimensional AI reasoning.
+  <!-- Badges -->
+  <p>
+    <a href="https://github.com/<credkellar-boop>/S3lf-c0n8ci0Us/actions"><img src="https://img.shields.io/github/actions/workflow/status/<credkellar-boop>/S3lf-c0n8ci0Us/main.yml?style=for-the-badge&logo=github" alt="Build Status"></a>
+    <a href="https://github.com/<credkellar-boop>/S3lf-c0n8ci0Us/releases"><img src="https://img.shields.io/github/v/release/<credkellar-boop>/S3lf-c0n8ci0Us?style=for-the-badge&color=blue" alt="Release"></a>
+    <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"></a>
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+    <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"></a>
+    <a href="https://github.com/<credkellar-boop>/S3lf-c0n8ci0Us/blob/main/LICENSE"><img src="https://img.shields.io/github/license/<credkellar-boop>/S3lf-c0n8ci0Us?style=for-the-badge" alt="License"></a>
+  </p>
+  <p>
+    <em>A multi-layered cognitive system integrating high-performance Rust processing with versatile Python abstractions.</em>
+  </p>
+</div>
 
-## The Problem Solved
-This engine eliminates the **latency and cognitive bottlenecks** inherent in standard automated systems. It prevents inefficient, serial decision-making that leads to missed market opportunities, system timeouts, and costly logic errors in high-stakes environments.
+---
 
-## Preventing System Failure
-By utilizing a **Rust-based memory-safe core** and **parallel execution architecture**, this system prevents:
-*   **Memory Corruption:** Eliminating common runtime crashes through Rust's strict safety guarantees.
-*   **Arbitrage Latency:** Solving for sub-millisecond delays that turn profitable opportunities into losses.
-*   **Logic Drift:** Using recursive, self-correcting loops to maintain operational integrity over time.
+## 📖 Table of Contents
+* [Overview](#-overview)
+* [System Architecture](#-system-architecture)
+* [Key Features](#-key-features)
+* [Prerequisites](#-prerequisites)
+* [Getting Started](#-getting-started)
+* [Testing](#-testing)
+* [Deployment](#-deployment)
+* [Contributing](#-contributing)
+* [License](#-license)
 
-## Longevity and Wealth Generation
-*   **Systemic Health:** Parallel computing reduces hardware stress by distributing workloads, ensuring long-term system stability and minimizing downtime.
-*   **Generational Wealth:** By enabling high-frequency, data-driven decision-making, the engine automates the capture of "money in motion." This efficiency compounds over time, transforming tactical execution into a scalable, wealth-generating asset that can grow autonomously across generations.
+---
 
-## Installation & Usage
-1.  **Clone the repository:** `git clone https://github.com/credkellar-boop/S3lf-c0n8ci0us.git`
-2.  **Build the core:** `maturin develop --release`
-3.  **Run tests:** `pytest tests/`
+## 🧠 Overview
 
-## Project Structure
-- `cognitive_core/`: Rust-based high-performance execution engine.
-- `conscious_surface/`: AI logic and integration layer.
-- `tests/`: Automated validation and benchmarking suite.
+**S3lf-c0n8ci0Us** is a hybrid cognitive architecture designed to simulate layered processing environments. By splitting the stack between a highly performant compiled core (Rust) and an adaptable surface processing layer (Python), it establishes a robust framework for meta-learning, autonomous navigation, and dynamic biological-digital bridging. 
+
+---
+
+## 🏗 System Architecture
+
+The repository is modularized into four primary cognitive layers:
+
+### 1. `cognitive_core/` (Rust)
+The engine's foundational layer. Written in Rust for memory safety and zero-cost abstractions. It handles heavy computational lifting, foundational memory routing, and low-level system interactions.
+
+### 2. `conscious_surface/` (Python)
+The sensory and control layer. Manages real-time data ingestion, biometric bridging, and top-level orchestrations.
+* **Core Components:** `master_controller.py`, `autonomous_nav.py`, `biological_bridge.py`, `biosample_ingest/`.
+
+### 3. `meta_learning/` (Python)
+The self-improvement engine. Evaluates system performance and optimizes internal pathways dynamically.
+* **Core Components:** `recursive_optimizer.py`.
+
+### 4. `subconscious_lib/` (Knowledge & Heuristics)
+A library of systemic frameworks and decision-making models (e.g., Cynefin framework, First Principles thinking, Systems Analysis, Root Cause resolution) mapped into actionable logic.
+
+---
+
+## ✨ Key Features
+
+* **Biometric & Biological Bridging:** Ingest and process complex biological sample data via the `biosample_ingest` pipeline.
+* **Recursive Optimization:** Continuous self-improvement loops utilizing the `meta_learning` module.
+* **Autonomous Navigation:** Adaptive pathway mapping and operational autonomy via `autonomous_nav.py`.
+* **Multi-Language Synergy:** Seamless data passing between Rust (`cognitive_core`) and Python (`conscious_surface`).
+* **Containerized Deployment:** Fully reproducible environments using Docker and `docker-compose`.
+
+---
+
+## ⚙️ Prerequisites
+
+To run this project locally, ensure you have the following installed:
+
+* [Docker](https://docs.docker.com/get-docker/) & [Docker Compose](https://docs.docker.com/compose/install/)
+* [Rust](https://rustup.rs/) (v1.70+ recommended)
+* [Python](https://www.python.org/downloads/) (v3.10+ recommended)
+* [Make](https://www.gnu.org/software/make/)
+
+---
+
+## 🚀 Getting Started
+
+**1. Clone the repository:**
+```bash
+git clone [https://github.com/](https://github.com/)<YOUR_GITHUB_USERNAME>/S3lf-c0n8ci0Us.git
+cd S3lf-c0n8ci0Us
