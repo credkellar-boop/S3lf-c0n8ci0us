@@ -1,0 +1,14 @@
+{
+  "name": "design_thinking",
+  "description": "Empathy-driven iterative framework focusing on user frustration vectors and rapid structural prototyping.",
+  "steps": [
+    {
+      "phase": "Friction Empathy",
+      "prompt_injection": "Analyze the problem strictly from the end-user emotional and functional standpoint. Map the exact point where cognitive friction turns into system abandonment."
+    },
+    {
+      "phase": "Radical Prototyping",
+      "prompt_injection": "Generate three non-linear solutions. One optimized for speed, one optimized for zero behavioral friction, and one radical systemic alternative."
+    }
+  ]
+}
