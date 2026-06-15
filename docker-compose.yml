@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  s3lf-engine:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./subconscious_lib:/app/subconscious_lib
+      - ./conscious_surface:/app/conscious_surface
+    environment:
+      - RUST_BACKTRACE=1
