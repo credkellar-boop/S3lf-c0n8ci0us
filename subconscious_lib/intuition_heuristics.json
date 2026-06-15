@@ -1,0 +1,8 @@
+{
+  "name": "intuition_heuristics",
+  "description": "Pattern matching engine. Uses 'Rule of Thumb' shortcuts to identify problems quickly.",
+  "steps": [
+    { "phase": "Pattern Match", "prompt_injection": "Compare current problem state against known architectural failures." },
+    { "phase": "Heuristic Validation", "prompt_injection": "Validate if the heuristic applies here. If not, revert to first principles." }
+  ]
+}
