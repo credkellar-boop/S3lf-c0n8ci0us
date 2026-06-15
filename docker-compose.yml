@@ -1,14 +1,17 @@
 version: '3.8'
 
 services:
-  s3lf-engine:
-    build: .
-    ports:
-      - "8501:8501"
-    env_file:
-      - .env
-    volumes:
-      - ./subconscious_lib:/app/subconscious_lib
-      - ./conscious_surface:/app/conscious_surface
+  s3lf-c0n8ci0us-monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: s3lf-c0n8ci0us-app
+    restart: unless-stopped
     environment:
-      - RUST_BACKTRACE=1
+      - GOOGLE_GENAI_USE_VERTEXAI=true
+      - GOOGLE_CLOUD_PROJECT=your-gcp-project-id       # 👈 REPLACE WITH YOUR GCP PROJECT ID
+      - GOOGLE_CLOUD_LOCATION=us-central1               # 👈 REPLACE WITH YOUR GCP REGION IF DIFFERENT
+      - GOOGLE_APPLICATION_CREDENTIALS=/root/.gcp/vertex-service-account.json
+    volumes:
+      # Mounts your private service account credential file securely in read-only mode
+      - ./vertex-service-account.json:/root/.gcp/vertex-service-account.json:ro
