@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="watermarked_img_14241948258419933286.png" alt="S3lf-c0n8ci0Us Logo" width="400"/>
+  <img src="IMG_0687.png" alt="S3lf-c0n8ci0Us Logo" width="400"/>
 
   # S3lf-c0n8ci0Us
   **Advanced AI Cognitive Architecture & Autonomous Framework**
