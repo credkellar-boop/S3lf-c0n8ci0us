@@ -19,20 +19,21 @@ impl RustMemoryBuffer {
         }
     }
 
-    // Exposes .add_context() to Python
+    // Explicitly enforce &mut self to mutate the instance Python is holding
     pub fn add_context(&mut self, context: String) {
-        // If your test relies on strict FIFO capacity matching the '2',
-        // you can uncomment the next two lines:
-        // if self.contexts.len() >= self.capacity { self.contexts.remove(0); }
+        // Enforce FIFO capacity limits if your test pushes "Memory 3" and expects "Memory 1" to drop
+        if self.contexts.len() >= self.capacity {
+            self.contexts.remove(0);
+        }
         self.contexts.push(context);
     }
 
-    // FIXES THE LATEST ERROR: Exposes .get_full_context() to Python
-    pub fn get_full_context(&self) -> Vec<String> {
-        self.contexts.clone()
+    // Explicitly return a copy of the list to Python
+    pub fn get_full_context(&self) -> PyResult<Vec<String>> {
+        Ok(self.contexts.clone())
     }
 
-    // Exposes .clear() to Python
+    // Explicitly clear the vector data
     pub fn clear(&mut self) {
         self.contexts.clear();
     }
