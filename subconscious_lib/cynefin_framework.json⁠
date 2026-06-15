@@ -1,0 +1,14 @@
+{
+  "name": "cynefin_framework",
+  "description": "Sense-making framework that classifies problems into Clear, Complicated, Complex, or Chaotic domains to determine the correct analytical response.",
+  "steps": [
+    {
+      "phase": "Domain Categorization",
+      "prompt_injection": "Analyze the problem environment. Is the cause-and-effect relationship clear (best practices), complicated (requires experts), complex (requires probing/testing), or chaotic (requires immediate action to establish order)?"
+    },
+    {
+      "phase": "Contextual Response Plan",
+      "prompt_injection": "Based on the identified domain, define the next immediate steps. If complex, suggest safe-to-fail experiments. If chaotic, suggest stabilization measures."
+    }
+  ]
+}
