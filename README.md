@@ -1,14 +1,9 @@
-<div align="center">
-  <img src="IMG_0687.png" alt="S3lf-c0n8ci0Us Logo" width="400"/>
-
-# S3lf-c0n8ci0us
-
 <p align="center">
   <a href="https://github.com/credkellar-boop/S3lf-c0n8ci0us/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/credkellar-boop/S3lf-c0n8ci0us/main.yml?style=for-the-badge&logo=github" alt="Build Status">
+    <img src="https://img.shields.io/github/actions/workflow/status/credkellar-boop/S3lf-c0n8ci0us/build.yml?style=for-the-badge&logo=githubactions&logoColor=white" alt="Build Status">
   </a>
   <a href="https://github.com/credkellar-boop/S3lf-c0n8ci0us/releases">
-    <img src="https://img.shields.io/github/v/release/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge&color=blue" alt="Latest Release">
+    <img src="https://img.shields.io/github/v/release/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge&logo=github&logoColor=white" alt="Release">
   </a>
   <a href="https://github.com/credkellar-boop/S3lf-c0n8ci0us/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge" alt="License">
@@ -16,10 +11,13 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/credkellar-boop/S3lf-c0n8ci0us?style=flat-square" alt="GitHub repo size">
-  <img src="https://img.shields.io/github/issues/credkellar-boop/S3lf-c0n8ci0us?style=flat-square" alt="GitHub issues">
-  <img src="https://img.shields.io/github/last-commit/credkellar-boop/S3lf-c0n8ci0us?style=flat-square" alt="GitHub last commit">
+  <img src="https://img.shields.io/github/repo-size/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge&logo=github&logoColor=white" alt="Repo Size">
+  <a href="https://github.com/credkellar-boop/S3lf-c0n8ci0us/issues">
+    <img src="https://img.shields.io/github/issues/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge&logo=github&logoColor=white" alt="Issues">
+  </a>
+  <img src="https://img.shields.io/github/last-commit/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge&logo=github&logoColor=white" alt="Last Commit">
 </p>
+
 
 ---
 
@@ -41,7 +39,7 @@ The internal decision engine of this repository executes an automated problem-so
 
 ---
 
-## 🛠️ Core Tech Stack
+## 📂CORE TECH STACK
 
 <p align="left">
   <a href="https://www.rust-lang.org/">
@@ -54,15 +52,16 @@ The internal decision engine of this repository executes an automated problem-so
     <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
   </a>
   <a href="https://github.com/features/actions">
-    <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions">
+    <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
   </a>
   <a href="https://cloud.google.com/vertex-ai">
-    <img src="https://img.shields.io/badge/Gemini%20Cloud-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini Cloud">
+    <img src="https://img.shields.io/badge/Vertex_AI-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Vertex AI">
   </a>
-  <a href="https://deepmind.google/technologies/gemini/#introduction">
-    <img src="https://img.shields.io/badge/Gemini%203.1%20Pro-1A73E8?style=for-the-badge&logo=google&logoColor=white" alt="Gemini 3.1 Pro">
+  <a href="https://deepmind.google/technologies/gemini/">
+    <img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini">
   </a>
 </p>
+
 
 ---
 
@@ -70,21 +69,22 @@ The internal decision engine of this repository executes an automated problem-so
 
 <p align="left">
   <a href="https://github.com/dependabot">
-    <img src="https://img.shields.io/badge/Dependabot-21272D?style=for-the-badge&logo=dependabot&logoColor=white" alt="Dependabot">
+    <img src="https://img.shields.io/badge/Dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white" alt="Dependabot">
   </a>
   <a href="https://github.com/aquasecurity/trivy">
-    <img src="https://img.shields.io/badge/Trivy-3F5A9A?style=for-the-badge&logo=aquasecurity&logoColor=white" alt="Trivy">
+    <img src="https://img.shields.io/badge/Trivy-000000?style=for-the-badge&logo=security&logoColor=white" alt="Trivy">
   </a>
   <a href="https://github.com/rustsec/rustsec">
-    <img src="https://img.shields.io/badge/Cargo%20Audit-000000?style=for-the-badge&logo=rust&logoColor=%23F04C30" alt="Cargo Audit">
-  </a>
-  <a href="https://github.com/PyCQA/bandit">
-    <img src="https://img.shields.io/badge/Bandit-3776AB?style=for-the-badge&logo=python&logoColor=yellow" alt="Bandit SAST">
+    <img src="https://img.shields.io/badge/RustSec-000000?style=for-the-badge&logo=rust&logoColor=white" alt="RustSec">
   </a>
   <a href="https://github.com/features/security">
-    <img src="https://img.shields.io/badge/GitHub%20Secrets-2EA44F?style=for-the-badge&logo=github&logoColor=white" alt="Secrets Management">
+    <img src="https://img.shields.io/badge/GitHub_Advanced_Security-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Security">
+  </a>
+  <a href="https://github.com/PyCQA/bandit">
+    <img src="https://img.shields.io/badge/Bandit-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Bandit">
   </a>
 </p>
+
 
 ---
 
@@ -92,13 +92,10 @@ The internal decision engine of this repository executes an automated problem-so
 
 <p align="left">
   <a href="https://aws.amazon.com/">
-    <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+    <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS">
   </a>
   <a href="https://kubernetes.io/">
     <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
-  </a>
-  <a href="https://helm.sh/">
-    <img src="https://img.shields.io/badge/Helm-0F1626?style=for-the-badge&logo=helm&logoColor=white" alt="Helm">
   </a>
   <a href="https://prometheus.io/">
     <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus">
@@ -109,7 +106,11 @@ The internal decision engine of this repository executes an automated problem-so
   <a href="https://www.postgresql.org/">
     <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
   </a>
+  <a href="https://helm.sh/">
+    <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" alt="Helm">
+  </a>
 </p>
+
 
 ---
 
