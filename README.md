@@ -1,4 +1,7 @@
 <p align="center">
+  <img src="IMG_3424.png" alt="Profile Image" width="400"/>
+</p>
+<p align="center">
   <img src="IMG_0687.png" alt="Profile Image" width="400"/>
 </p>
 <p align="center">
