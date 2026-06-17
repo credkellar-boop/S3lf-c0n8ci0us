@@ -1,4 +1,7 @@
 <p align="center">
+  <img src="IMG_0687.png" alt="Profile Image" width="400"/>
+</p>
+<p align="center">
   <a href="https://github.com/credkellar-boop/S3lf-c0n8ci0us/actions">
     <img src="https://img.shields.io/github/actions/workflow/status/credkellar-boop/S3lf-c0n8ci0us/build.yml?style=for-the-badge&logo=githubactions&logoColor=white" alt="Build Status">
   </a>
@@ -9,7 +12,6 @@
     <img src="https://img.shields.io/github/license/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge" alt="License">
   </a>
 </p>
-
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/credkellar-boop/S3lf-c0n8ci0us?style=for-the-badge&logo=github&logoColor=white" alt="Repo Size">
   <a href="https://github.com/credkellar-boop/S3lf-c0n8ci0us/issues">
